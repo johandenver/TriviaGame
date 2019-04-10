@@ -44,8 +44,8 @@ if (counter === 0) {
   //  Execute the run function.
   run();    
       
-/*
-1. place the array of quesitons and answer choices on the text using the id found in the in html.
+
+// 1. place the array of quesitons and answer choices on the text using the id found in the in html.
 
 // create variables
     // an array for questions and answers
@@ -70,7 +70,7 @@ if (counter === 0) {
 for (var i=0; i< questions.length; i++){
 
 }
-
+/*
 2. capture and store the user answer from the button answer clicks on the html page. 
     2.1 confirm if the user answer is correct and update the score. 
 3. when the user clicks the "done" button on the bottom of the page, the total score is updated and shown on a results page. 
