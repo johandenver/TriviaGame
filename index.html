@@ -9,7 +9,7 @@
     <title>Trivia Game!</title>
 
     <!-- link to Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <!-- link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     <!-- link to CSS Stylesheet-->
@@ -22,158 +22,28 @@
     <div id="quiz" class="container my-5 p-3 rounded text-center">
  
         <!--Game Title Header-->
-        <h1>Totally Trivia !</h1>
+        <h1>So, this is Totally Trivia ?!</h1>
         
         <!--Time remaining countdown clock-->
-        <h2>Time Remaining:<span id="time-remaining"></span> </h2>
+        <h3 class="timer">Time Remaining: <span id="time-remaining"></span></h3>
        
         <!--Questions and answer choices-->
-        <div>
+        <div id="content" class="container mt-5 p-2 rounded text-center">
 
-            <h2 id="questions">question</h2>
+            <h2><span class="questions" id="questions"></span></h2>
             
             <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="button1" class="btn btn-outline-secondary .btn-lg"><span id="choice1"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice2"></span>choice 3</span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice3"></span>choice 4</span></button>
+                <button id="Button1" class="answer btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
+                <button id="Button2" class="answer btn btn-outline-secondary .btn-lg"><span id="choice1"></span></span></button>
+                <button id="Button3" class="answer btn btn-outline-secondary .btn-lg"><span id="choice2"></span></span></button>
+                <button id="Button4" class="answer btn btn-outline-secondary .btn-lg"><span id="choice3"></span></span></button>
             </div>
 
+            <!--Button to click when done with quesitons-->
+            <button type= "button" id="next" disabled=true class= "btn btn-outline-secondary .btn-lg m-3 pt-3 "><h3>Next Question..</h3></button>
+        
         </div>
-
-        <div>
-
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice1"></span>choice 2</span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice2"></span>choice 3</span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice3"></span>choice 4</span></button>
-            </div>
-
-        </div>
-
-        <div>
-
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice1"></span>choice 2</span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice2"></span>choice 3</span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice3"></span>choice 4</span></button>
-            </div>
-
-        </div>
-
-        <div>
-
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice1"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice2"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice3"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-
-        <div>
-            <h2 id="questions">question</h2>
-            
-            <div class="answers">
-                <button id="button0" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice1" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice2" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-                <button id="choice3" class="btn btn-outline-secondary .btn-lg"><span id="choice0"></span></span></button>
-            </div>
-
-        </div>
-                                                                                                                                                    
-        <!--<div>
-                <h2>Question 2: </h2>
-                <P> -insert four answer options- </P>
-        </div>
-        <div>
-                <h2>Question: </h2>
-                <P> -insert four answer options- </P>
-        </div>
-        <div>
-                <h2>Question 4: </h2>
-                <P> -insert four answer options- </P>
-        </div>
-        <div>
-                <h2>Question 5: </h2>
-                <P> -insert four answer options- </P>
-        </div>
-        -->
-
-        <!--Button to click when done with quesitons-->
-        <button type= "button" id="allDone" class= "btn btn-outline-secondary .btn-lg m-5 pt-4"><h1>Done!!</h1></button>
-           
+          
     </div>
 
     <!-- links to jquery and boodstrap-->
