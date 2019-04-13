@@ -106,6 +106,7 @@ function decrement() {
         $("#next").attr("disabled", false);
 
         $("#next").click(function(){
+
             $("#next").attr("disabled", true);
             $(".answer").attr("disabled", false);
             //console.log("click");
@@ -117,7 +118,16 @@ function decrement() {
                runTimer();
                $(".answers").removeClass("hide");
                $(".questions").removeClass("hide");
-            }
+            } else if (questionCount === questionsList.length-1){
+                console.log("end of game");
+                // show scores
+                $(".answers").addClass("hide");
+                $("#next").addClass("hide");
+                $(".questions").addClass("hide");
+                var showScore = $("<h2>").text("so, you got " + score + " total questions correct!");
+                $("#content").append(showScore);
+        
+            } 
         })
         
 
@@ -166,7 +176,7 @@ $(".answer").click(function(){
         $(".answers").addClass("hide");
         $("#next").addClass("hide");
         $(".questions").addClass("hide");
-        var showScore = $("<h2>").text("so, you got " + score + " total questions correct!");
+        var showScore = $("<h2>").text("so, you got " + score + " correct and " + incorrect + " incorrect! ");
         $("#content").append(showScore);
 
     } else {
