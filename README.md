@@ -2,9 +2,9 @@
 
 Trivia game using JavaScript for the logic and jQuery to manipulate HTML. App includes HTML and CSS.
 
-<img src="#">
+<img src="assets/images/Triviagame.jpg">
 
-To view live application:  https://
+To view live application:  https://johandenver.github.io/TriviaGame/
 
 Contains a Trivia form with multiple choice and/or true/false answer options.
 
